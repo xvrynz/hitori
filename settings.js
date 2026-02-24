@@ -12,7 +12,7 @@ const chalk = require('chalk');
 global.owner = ['60107856652'] //['628','628'] 2 owner atau lebih
 global.author = 'XvRynz'
 global.botname = 'HeeJake Bot'
-global.packname = 'HeeJakw'
+global.packname = 'HeeJake'
 global.listprefix = ['+','!','.']
 
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
@@ -82,4 +82,5 @@ fs.watchFile(file, () => {
 	require(file)
 
 });
+
 
