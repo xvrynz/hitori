@@ -9,17 +9,17 @@ const chalk = require('chalk');
 
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 
-global.owner = ['6282113821188'] //['628','628'] 2 owner atau lebih
-global.author = 'Nazedev'
-global.botname = 'Hitori Bot'
-global.packname = 'Bot WhatsApp'
+global.owner = ['60107856652'] //['628','628'] 2 owner atau lebih
+global.author = 'XvRynz'
+global.botname = 'HeeJake Bot'
+global.packname = 'HeeJake'
 global.listprefix = ['+','!','.']
 
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
 global.tempatStore = 'baileys_store.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
 global.pairing_code = true
-global.number_bot = '' // Kalo pake panel bisa masukin nomer di sini, jika belum ambil session. Format : '628xx'
+global.number_bot = '6285833279152' // Kalo pake panel bisa masukin nomer di sini, jika belum ambil session. Format : '628xx'
 
 global.fake = {
 	anonim: 'https://telegra.ph/file/95670d63378f7f4210f03.png',
@@ -37,7 +37,7 @@ global.my = {
 }
 
 global.limit = {
-	free: 20,
+	free: 50,
 	premium: 999,
 	vip: 9999
 }
@@ -50,15 +50,15 @@ global.money = {
 
 global.mess = {
 	key: 'Apikey mu telah habis silahkan kunjungi\nhttps://naze.biz.id',
-	owner: 'Fitur Khusus Owner!',
-	admin: 'Fitur Khusus Admin!',
-	botAdmin: 'Bot Bukan Admin!',
+	owner: 'Hanya Owner uyy~',
+	admin: 'Kamu bukan admin, wekk!',
+	botAdmin: 'Jadiin bot admin dulu syg!',
 	group: 'Gunakan Di Group!',
 	private: 'Gunakan Di Privat Chat!',
 	limit: 'Limit Anda Telah Habis!',
 	prem: 'Khusus User Premium!',
-	wait: 'Loading...',
-	error: 'Error!',
+	wait: 'Wait sayangnya HeeJake',
+	error: 'Error nih seng',
 	done: 'Done'
 }
 
@@ -66,7 +66,7 @@ global.APIs = {
 	naze: 'https://api.naze.biz.id',
 }
 global.APIKeys = {
-	'https://api.naze.biz.id': 'YOUR_API_KEY',
+	'https://api.naze.biz.id': 'nz-5343916e66',
 }
 
 // Lainnya
@@ -82,3 +82,4 @@ fs.watchFile(file, () => {
 	require(file)
 
 });
+
