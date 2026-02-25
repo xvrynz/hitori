@@ -761,11 +761,34 @@ module.exports = naze = async (naze, m, msg, store) => {
 		
 		switch(fileSha256 || command) {
 			// Tempat Add Case
-			case '19rujxl1e': {
-				console.log('.')
+			case 'ping':{
+				reply('pong🏓')
 			}
 			break
-			
+			case 'HeeJake':{
+				reply('ya sayang, HeeJake disini😍')
+			}
+			break
+			case 'addlist':{
+				reply('Reply Pesannya seng!')
+			}
+		    break
+			case 'Heeseung':{
+				reply('neee , hee disini💗🦌')
+			}
+			break
+			case 'Jake':{
+				reply('neee , yeyun disini💗🦮')
+			}
+			break
+			case 'Bot':{
+				reply('Bot bot. Panggil baby dong☺️')
+			}
+			break
+			case 'Baby':{
+				reply('Iyaa manisnya HeeJake😍💗')
+			}
+			break
 			// Owner Menu
 			case 'shutdown': case 'off': {
 				if (!isCreator) return m.reply(mess.owner)
@@ -820,7 +843,7 @@ module.exports = naze = async (naze, m, msg, store) => {
 				if (!result) return m.reply('Link Invalid❗')
 				m.reply(mess.wait)
 				await naze.groupAcceptInvite(result[1]).catch((res) => {
-					if (res.data == 400) return m.reply('Grup Tidak Di Temukan❗');
+					if (res.data == 400) return m.reply('Grup tidak ditemukan❗');
 					if (res.data == 401) return m.reply('Bot Di Kick Dari Grup Tersebut❗');
 					if (res.data == 409) return m.reply('Bot Sudah Join Di Grup Tersebut❗');
 					if (res.data == 410) return m.reply('Url Grup Telah Di Setel Ulang❗');
@@ -4458,4 +4481,5 @@ fs.watchFile(file, () => {
 	console.log(chalk.redBright(`Update ${__filename}`))
 	delete require.cache[file]
 	require(file)
+
 });
