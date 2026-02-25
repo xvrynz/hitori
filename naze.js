@@ -759,36 +759,20 @@ module.exports = naze = async (naze, m, msg, store) => {
 			user.afkReason = ''
 		}
 		
-		switch(fileSha256 || command) {
+		switch(command) {
 			// Tempat Add Case
-			case 'ping':{
-				reply('pong🏓')
-			}
-			break
-			case 'HeeJake':{
-				reply('ya sayang, HeeJake disini😍')
-			}
-			break
-			case 'addlist':{
-				reply('Reply Pesannya seng!')
-			}
-		    break
-			case 'Heeseung':{
-				reply('neee , hee disini💗🦌')
-			}
-			break
-			case 'Jake':{
-				reply('neee , yeyun disini💗🦮')
-			}
-			break
-			case 'Bot':{
-				reply('Bot bot. Panggil baby dong☺️')
-			}
-			break
-			case 'Baby':{
-				reply('Iyaa manisnya HeeJake😍💗')
-			}
-			break
+			case 'ping': {
+  reply('pong 🏓')
+				case 'HeeJake':{
+				reply('Iya sayang, kami disini💗')
+				case 'Heeseung':{
+				reply('neee, hee disini😍🦌')
+				case 'Jake':{
+				reply('neee, yeyun disini😍🦮')
+				case'bot':{
+				reply('bot nugu? panggil Heejake sayang')
+}
+break
 			// Owner Menu
 			case 'shutdown': case 'off': {
 				if (!isCreator) return m.reply(mess.owner)
@@ -4483,3 +4467,4 @@ fs.watchFile(file, () => {
 	require(file)
 
 });
+
